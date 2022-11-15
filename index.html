@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,109 @@
   <link rel="stylesheet" href="style.css">
   <title>Sinema Bilet Rezervasyon</title>
 </head>
-<body>
-<div class="container">         <!-- container başlangıç-->
-  <div class="screen"></div>    <!-- screen başlangıç-->
-   <div class="row">           <!-- row 1. sıraiçin-->
-  <div class="seat "></div>   <!-- seat koltuklar için.-->
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat reserved"></div>
-  <div class="seat reserved"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
- </div>
-   <div class="row"> 
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
- </div>
-   <div class="row"> 
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
- </div>
-   <div class="row"> 
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
- </div>
-   <div class="row"> 
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
-  <div class="seat"></div>
- </div>
-</div>  <!-- container bitiş-->
 
-<div class="movie-list">  <!-- film listesi için liste  başlangıç-->
-<select name="" id="">
-  <option value="20">movie 1</option>
-  <option value="20">movie 2</option>
-  <option value="20">movie 3</option>
-</select>
-</div>                   <!-- film listesi için liste  bitiş-->
+<body>
+  <div class="container">
+    <!-- container başlangıç-->
+    <div class="screen"></div> <!-- screen başlangıç ve bitiş -->
+    <div class="row">
+      <!-- row 1. sıraiçin-->
+      <div class="seat "></div> <!-- seat koltuklar için.-->
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat reserved"></div>
+      <div class="seat reserved"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+
+  </div> <!-- container bitiş-->
+
+  <div class="movie-list">
+    <!-- film listesi için liste  başlangıç-->
+    <select id="movie">
+      <option disabled>Film seçiniz:</option>
+      <option value="20">movie 1</option>
+      <option value="22">movie 2</option>
+      <option value="25">movie 3</option>
+    </select>
+  </div> <!-- film listesi için liste  bitiş-->
+
+
+  <ul class="info">
+    <li>
+      <div class="seat selected"></div>
+      <small>Seçili</small>
+    </li>
+    <li>
+      <div class="seat "></div>
+      <small>Boş</small>
+    </li>
+    <li>
+      <div class="seat reserved"></div>
+      <small>Dolu</small>
+    </li>
+
+  </ul>
+
+  <p class="text">
+    <span id="count">3</span> Adet koltuk için hesaplanan ücret <span id="amount">60</span> TL.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="script.js"> </script>
 </body>
+
 </html>
